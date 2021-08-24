@@ -1,8 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: medium;
+  
 }
 body {
   font-family: "Muli", sans-serif;
@@ -11,20 +13,81 @@ body {
   font-family: sans-serif;
   overflow: hidden;
 }
+.navbar , .navDetail ,.threegun ,.gun{
+ background-color: #ffd000ea;
+}
+
+.navbar{
+  min-height: 10vh;
+  min-width: 100vw;
+  text-align: center;
+  border-radius: 10px;
+}
+.navDetail{
+  height: 3vh;
+  line-height: 3vh;
+}
+.threegun{
+  display: flex;
+  justify-content: center;
+  align-content: center ;
+}
+.gun{
+  min-height: 5vh;
+  min-width: 33.3vw;
+  border: 2px solid rgb(196, 196, 18) ;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 5vh;
+}
+.gun:hover{
+  cursor: pointer;
+}
+.container1{
+display: flex;
+flex-direction: row;
+}
+.left ,.right{
+  min-width :25vw ;
+overflow: hidden;
+padding-top: 20px;
+background-color: aqua;
+border: 2px ;
+border: 2px solid orange;
+border-radius: 10px;
+}
+.imgs{
+width: 20vw;
+height: 25vh;
+  
+}
 .calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  max-width: 100%;
+  min-width: 50vw;
+  padding-top: 20px;
+  border: 2px solid orange;
+border-radius: 10px;
+background-color: #FFFF00;
+
 }
 .details {
-  min-height: 15vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-items: center;
+  display: flex;
+  flex-direction: column;
 }
-.container {
+
+.Name {
+  margin-bottom: 10px;
+  justify-content: center;
+
+}
+.container2 {
   min-height: 60vh;
   margin-bottom: 30px;
 }
@@ -42,9 +105,10 @@ body {
   width: 80px;
   cursor: pointer;
 }
-.btn:hover{
-  min-height:40px ;
+#btn:hover{
+  min-height:50px ;
   width: 90px;
   background-color: rgb(33, 214, 33);
   border: 1px solid rgb(53, 223, 53);
+  margin-top: 10px;
 }
