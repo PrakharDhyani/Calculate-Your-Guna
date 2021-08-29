@@ -10,8 +10,6 @@ body {
   font-family: "Muli", sans-serif;
   background-color: #f6f7fb;
   min-height: 100vh;
-  font-family: sans-serif;
-  overflow: hidden;
 }
 .navbar , .navDetail ,.threegun ,.gun{
  background-color: #ffd000ea;
