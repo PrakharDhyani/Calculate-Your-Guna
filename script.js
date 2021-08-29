@@ -6,6 +6,9 @@ var midContainer = document.getElementsByClassName("midContainer");
 var FName=document.getElementsByClassName("FName")[0];
 var LName=document.getElementsByClassName("LName")[0];
 var details=document.getElementsByClassName("details");
+var output = document.getElementsByClassName("output")[0];
+FName.value = "";
+LName.value = "";
 
 btn.addEventListener("click", checkAns);
 function checkAns() {
@@ -14,6 +17,8 @@ function checkAns() {
   name += " ";
   name += LName.value;
   details[0].style.display = "none";
+  console.log(output);
+  output.style.display = "block";
   var selectedAns = document.querySelectorAll(".questions");
   for (var i = 0; i < 10; i++) {
     var one = selectedAns[i];
