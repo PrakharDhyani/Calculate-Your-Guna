@@ -2,23 +2,32 @@ var raj = 0;
 var tam = 0;
 var sat = 0;
 var btn = document.getElementById("btn");
+var midContainer = document.getElementsByClassName("midContainer");
+var FName=document.getElementsByClassName("FName")[0];
+var LName=document.getElementsByClassName("LName")[0];
+var details=document.getElementsByClassName("details");
 
 btn.addEventListener("click", checkAns);
 function checkAns() {
+  midContainer[0].style.display = "none";
+  var name = FName.value;
+  name += " ";
+  name += LName.value;
+  details[0].style.display = "none";
   var selectedAns = document.querySelectorAll(".questions");
   for (var i = 0; i < 10; i++) {
     var one = selectedAns[i];
     var ele = document.getElementsByName("q" + (i + 1));
-    // console.log(ele);
-    for (var j = 0; j < ele.length; j++) {
+    for (var j = 0; j < ele.length; j++)
+    {
       if (ele[j].checked) {
         CalculateResult(ele[j]);
       }
     }
   }
-  raj = (raj / 10) * 100;
-  tam = (tam / 10) * 100;
-  sat = (sat / 10) * 100;
+  raj = (raj / 35) * 100;
+  tam = (tam / 35) * 100;
+  sat = (sat / 35) * 100;
   console.log(raj);
   console.log(tam);
   console.log(sat);
