@@ -61,6 +61,8 @@ body {
 .imgs {
   width: 20vw;
   height: 25vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 .calculator {
   display: flex;
@@ -111,14 +113,17 @@ body {
   border: 1px solid rgb(53, 223, 53);
   margin-top: 10px;
 }
-.output{
+.output {
   display: none;
+  margin: auto;
+  width: 40vw;
 }
-.result
-{
+.result {
   background-color: blueviolet;
   min-height: 10vh;
   border: 2px solid blueviolet;
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 4%;
 }
